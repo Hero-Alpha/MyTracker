@@ -1,0 +1,52 @@
+const Food = require('../models/Food');
+const { parseSupplementLabel } = require('../services/gemini.service');
+
+async function parseLabel(req, res) {
+  if (!req.file) {
+    return res.status(400).json({ message: 'Image file is required' });
+  }
+
+  try {
+    const mimeType = req.file.mimetype;
+    const parsed = await parseSupplementLabel(req.file.buffer, mimeType);
+    res.json({ parsed });
+  } catch (err) {
+    console.error('Gemini parse error:', err.message);
+    res.status(502).json({ message: 'Failed to parse label. Try a clearer image.' });
+  }
+}
+
+async function saveSupplement(req, res) {
+  const { name, servingSize, servingUnit, nutrition, commonUnits } = req.body;
+
+  if (!name || !servingSize || !servingUnit || !nutrition) {
+    return res.status(400).json({ message: 'name, servingSize, servingUnit and nutrition are required' });
+  }
+
+  const existing = await Food.findOne({ name, source: 'user', userId: req.userId, category: 'supplement' });
+  if (existing) {
+    Object.assign(existing, { servingSize, servingUnit, nutrition, commonUnits: commonUnits || [] });
+    await existing.save();
+    return res.json({ food: existing });
+  }
+
+  const food = await Food.create({
+    name,
+    source: 'user',
+    userId: req.userId,
+    servingSize: Number(servingSize),
+    servingUnit,
+    nutrition,
+    commonUnits: commonUnits || [],
+    category: 'supplement',
+  });
+
+  res.status(201).json({ food });
+}
+
+async function getUserSupplements(req, res) {
+  const supplements = await Food.find({ source: 'user', userId: req.userId, category: 'supplement', isActive: true }).lean();
+  res.json({ supplements });
+}
+
+module.exports = { parseLabel, saveSupplement, getUserSupplements };

@@ -1,0 +1,485 @@
+{
+  "version": 1,
+  "bugs": [
+    {
+      "id": "bug-001",
+      "timestamp": "2026-06-28T07:37:48.049Z",
+      "error_message": "Significant refactor of ",
+      "file": "MyTracker/client/src/shared/services/api.js",
+      "root_cause": "6 lines replaced/restructured",
+      "fix": "Rewrote 9→4 lines (6 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "js"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T07:37:48.049Z"
+    },
+    {
+      "id": "bug-002",
+      "timestamp": "2026-06-28T07:43:54.714Z",
+      "error_message": "Significant refactor of ",
+      "file": "MyTracker/client/src/features/auth/Login.jsx",
+      "root_cause": "2 lines replaced/restructured",
+      "fix": "Rewrote 4→7 lines (2 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T07:43:54.714Z"
+    },
+    {
+      "id": "bug-003",
+      "timestamp": "2026-06-28T07:44:01.627Z",
+      "error_message": "Significant refactor of ",
+      "file": "MyTracker/client/src/features/auth/Register.jsx",
+      "root_cause": "2 lines replaced/restructured",
+      "fix": "Rewrote 4→7 lines (2 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T07:44:01.627Z"
+    },
+    {
+      "id": "bug-004",
+      "timestamp": "2026-06-28T07:47:10.562Z",
+      "error_message": "CSS fix: background-color, color",
+      "file": "MyTracker/client/src/index.css",
+      "root_cause": "background-color: #f9fafb → #030712; color: #111827 → #f9fafb",
+      "fix": "Changed background-color: #f9fafb → #030712; color: #111827 → #f9fafb",
+      "tags": [
+        "auto-detected",
+        "style-fix",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T07:47:10.562Z"
+    },
+    {
+      "id": "bug-005",
+      "timestamp": "2026-06-28T07:47:56.645Z",
+      "error_message": "Incorrect value in code",
+      "file": "MyTracker/client/src/features/auth/Login.jsx",
+      "root_cause": "Had \"min-h-screen flex items-center justify-center bg-",
+      "fix": "Changed to \"min-h-screen flex items-center justify-center\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 3,
+      "last_seen": "2026-06-28T07:48:07.940Z"
+    },
+    {
+      "id": "bug-006",
+      "timestamp": "2026-06-28T08:20:37.885Z",
+      "error_message": "Null/undefined access in ",
+      "file": "MyTracker/client/src/features/nutrition/LogFoodModal.jsx",
+      "root_cause": "Property access on potentially null/undefined value",
+      "fix": "Added null safety (optional chaining or null check)",
+      "tags": [
+        "auto-detected",
+        "null-safety",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:20:37.885Z"
+    },
+    {
+      "id": "bug-007",
+      "timestamp": "2026-06-28T08:24:54.996Z",
+      "error_message": "Missing guard clause",
+      "file": "MyTracker/server/src/controllers/logs.controller.js",
+      "root_cause": "No early return/throw for edge case: !status",
+      "fix": "Added guard clause: if (!status)",
+      "tags": [
+        "auto-detected",
+        "guard-clause",
+        "js"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:24:54.996Z"
+    },
+    {
+      "id": "bug-008",
+      "timestamp": "2026-06-28T08:25:12.122Z",
+      "error_message": "Missing import: ./routes/workouts, ./routes/measurements",
+      "file": "MyTracker/server/src/index.js",
+      "root_cause": "Module(s) not imported: ./routes/workouts, ./routes/measurements",
+      "fix": "Added import(s) for ./routes/workouts, ./routes/measurements",
+      "tags": [
+        "auto-detected",
+        "missing-import",
+        "js"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:25:12.122Z"
+    },
+    {
+      "id": "bug-009",
+      "timestamp": "2026-06-28T08:27:38.677Z",
+      "error_message": "Wrong reference: meal should be workout",
+      "file": "MyTracker/client/src/features/dashboard/Dashboard.jsx",
+      "root_cause": "Used \"meal\" instead of \"workout\"",
+      "fix": "Changed meal → workout",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:27:38.677Z"
+    },
+    {
+      "id": "bug-010",
+      "timestamp": "2026-06-28T08:27:59.568Z",
+      "error_message": "Null/undefined access in ",
+      "file": "MyTracker/client/src/features/dashboard/Dashboard.jsx",
+      "root_cause": "Property access on potentially null/undefined value",
+      "fix": "Added null safety (optional chaining or null check)",
+      "tags": [
+        "auto-detected",
+        "null-safety",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:27:59.568Z"
+    },
+    {
+      "id": "bug-011",
+      "timestamp": "2026-06-28T08:31:47.591Z",
+      "error_message": "Incorrect value in code",
+      "file": "MyTracker/client/src/features/workout/LogWorkoutModal.jsx",
+      "root_cause": "Had ', marginTop: '",
+      "fix": "Changed to '2px'",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:31:47.591Z"
+    },
+    {
+      "id": "bug-012",
+      "timestamp": "2026-06-28T08:40:01.950Z",
+      "error_message": "Missing error handling in unknown",
+      "file": "MyTracker/client/src/features/dashboard/Dashboard.jsx",
+      "root_cause": "Code path had no error handling — exceptions would propagate uncaught",
+      "fix": "Added try/catch block",
+      "tags": [
+        "auto-detected",
+        "error-handling",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:40:01.950Z"
+    },
+    {
+      "id": "bug-013",
+      "timestamp": "2026-06-28T08:40:07.846Z",
+      "error_message": "Null/undefined access in ",
+      "file": "MyTracker/client/src/features/dashboard/Dashboard.jsx",
+      "root_cause": "Property access on potentially null/undefined value",
+      "fix": "Added null safety (optional chaining or null check)",
+      "tags": [
+        "auto-detected",
+        "null-safety",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:40:07.846Z"
+    },
+    {
+      "id": "bug-014",
+      "timestamp": "2026-06-28T08:40:19.582Z",
+      "error_message": "CSS fix: backgroundColor, fontSize",
+      "file": "MyTracker/client/src/features/dashboard/Dashboard.jsx",
+      "root_cause": "backgroundColor: '#1c1917', border: '1px solid #44403c', borderRadius: '12px', padding: '12px 16px' → '#1c1107', border: `1px solid #92400e`, borderRadius: '14px', padding: '14px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px'; fontSize: '13px', color: '#a8a29e' → '12px', fontWeight: 700, color: C.amber, backgroundColor: '#451a03', border: `1px solid #92400e`, borderRadius: '8px', padding: '8px 14px', cursor: 'pointer', whiteSpace: 'nowrap'",
+      "fix": "Changed backgroundColor: '#1c1917', border: '1px solid #44403c', borderRadius: '12px', padding: '12px 16px' → '#1c1107', border: `1px solid #92400e`, borderRadius: '14px', padding: '14px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px'; fontSize: '13px', color: '#a8a29e' → '12px', fontWeight: 700, color: C.amber, backgroundColor: '#451a03', border: `1px solid #92400e`, borderRadius: '8px', padding: '8px 14px', cursor: 'pointer', whiteSpace: 'nowrap'",
+      "tags": [
+        "auto-detected",
+        "style-fix",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:40:19.582Z"
+    },
+    {
+      "id": "bug-015",
+      "timestamp": "2026-06-28T08:41:35.169Z",
+      "error_message": "Missing import: ./routes/analytics",
+      "file": "MyTracker/server/src/index.js",
+      "root_cause": "Module(s) not imported: ./routes/analytics",
+      "fix": "Added import(s) for ./routes/analytics",
+      "tags": [
+        "auto-detected",
+        "missing-import",
+        "js"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:41:35.169Z"
+    },
+    {
+      "id": "bug-016",
+      "timestamp": "2026-06-28T08:43:19.691Z",
+      "error_message": "Incorrect value in code",
+      "file": "MyTracker/client/src/App.jsx",
+      "root_cause": "Had \"          element={<Navigate to=\"",
+      "fix": "Changed to \"/analytics\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:43:19.691Z"
+    },
+    {
+      "id": "bug-017",
+      "timestamp": "2026-06-28T08:43:26.144Z",
+      "error_message": "Incorrect value in code",
+      "file": "MyTracker/client/src/features/dashboard/Dashboard.jsx",
+      "root_cause": "Had 'react-icons/fi'",
+      "fix": "Changed to 'react-router-dom'",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:43:26.144Z"
+    },
+    {
+      "id": "bug-018",
+      "timestamp": "2026-06-28T08:46:45.290Z",
+      "error_message": "Wrong reference: FiBarChart2 should be FiMenu",
+      "file": "MyTracker/client/src/features/dashboard/Dashboard.jsx",
+      "root_cause": "Used \"FiBarChart2\" instead of \"FiMenu\"",
+      "fix": "Changed FiBarChart2 → FiMenu",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:46:45.290Z"
+    },
+    {
+      "id": "bug-019",
+      "timestamp": "2026-06-28T08:47:09.422Z",
+      "error_message": "Significant refactor of ",
+      "file": "MyTracker/client/src/features/dashboard/Dashboard.jsx",
+      "root_cause": "3 lines replaced/restructured",
+      "fix": "Rewrote 14→10 lines (3 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:47:09.422Z"
+    },
+    {
+      "id": "bug-020",
+      "timestamp": "2026-06-28T08:47:18.948Z",
+      "error_message": "Significant refactor of ",
+      "file": "MyTracker/client/src/features/analytics/Analytics.jsx",
+      "root_cause": "2 lines replaced/restructured",
+      "fix": "Rewrote 3→4 lines (2 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:47:18.948Z"
+    },
+    {
+      "id": "bug-021",
+      "timestamp": "2026-06-28T08:48:46.272Z",
+      "error_message": "Missing await",
+      "file": "MyTracker/server/src/services/gemini.service.js",
+      "root_cause": "Async call without await — returned Promise instead of value",
+      "fix": "Added await to async call",
+      "tags": [
+        "auto-detected",
+        "async-fix",
+        "js"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:48:46.272Z"
+    },
+    {
+      "id": "bug-022",
+      "timestamp": "2026-06-28T08:49:14.899Z",
+      "error_message": "Missing import: ./routes/review",
+      "file": "MyTracker/server/src/index.js",
+      "root_cause": "Module(s) not imported: ./routes/review",
+      "fix": "Added import(s) for ./routes/review",
+      "tags": [
+        "auto-detected",
+        "missing-import",
+        "js"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:49:14.899Z"
+    },
+    {
+      "id": "bug-023",
+      "timestamp": "2026-06-28T08:50:24.621Z",
+      "error_message": "CSS fix: path",
+      "file": "MyTracker/client/src/shared/components/Sidebar.jsx",
+      "root_cause": "path: '/analytics', label: 'Analytics', Icon: FiBarChart2 → '/review',    label: 'AI Weekly Review', Icon: FiZap",
+      "fix": "Changed path: '/analytics', label: 'Analytics', Icon: FiBarChart2 → '/review',    label: 'AI Weekly Review', Icon: FiZap",
+      "tags": [
+        "auto-detected",
+        "style-fix",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:50:24.621Z"
+    },
+    {
+      "id": "bug-024",
+      "timestamp": "2026-06-28T08:55:35.263Z",
+      "error_message": "CSS fix: value",
+      "file": "MyTracker/client/src/features/goals/GoalsPage.jsx",
+      "root_cause": "value: 'extremely_active',  label: 'Extremely Active',   sub: 'Physical job or 2× training' → 'very_active',label: 'Extremely Active',   sub: 'Physical job or 2× training'",
+      "fix": "Changed value: 'extremely_active',  label: 'Extremely Active',   sub: 'Physical job or 2× training' → 'very_active',label: 'Extremely Active',   sub: 'Physical job or 2× training'",
+      "tags": [
+        "auto-detected",
+        "style-fix",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:55:35.263Z"
+    },
+    {
+      "id": "bug-025",
+      "timestamp": "2026-06-28T08:55:40.430Z",
+      "error_message": "Incorrect value in code",
+      "file": "MyTracker/client/src/features/goals/GoalsPage.jsx",
+      "root_cause": "Had 'moderately_active'",
+      "fix": "Changed to 'moderate'",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T08:55:40.430Z"
+    },
+    {
+      "id": "bug-026",
+      "timestamp": "2026-06-28T09:01:55.518Z",
+      "error_message": "CSS fix: padding, display, fontSize",
+      "file": "MyTracker/client/src/features/dashboard/Dashboard.jsx",
+      "root_cause": "padding: '14px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'sticky', top: 0, zIndex: 10 → isMobile ? '12px 16px' : '14px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'sticky', top: 0, zIndex: 10; display: 'flex', alignItems: 'center', gap: '12px' → 'flex', alignItems: 'center', gap: '10px'; fontSize: '20px', fontWeight: 900, color: C.textBold, letterSpacing: '-0.3px' → isMobile ? '17px' : '20px', fontWeight: 900, color: C.textBold, letterSpacing: '-0.3px'",
+      "fix": "Changed padding: '14px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'sticky', top: 0, zIndex: 10 → isMobile ? '12px 16px' : '14px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'sticky', top: 0, zIndex: 10; display: 'flex', alignItems: 'center', gap: '12px' → 'flex', alignItems: 'center', gap: '10px'; fontSize: '20px', fontWeight: 900, color: C.textBold, letterSpacing: '-0.3px' → isMobile ? '17px' : '20px', fontWeight: 900, color: C.textBold, letterSpacing: '-0.3px'",
+      "tags": [
+        "auto-detected",
+        "style-fix",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 2,
+      "last_seen": "2026-06-28T09:02:04.156Z"
+    },
+    {
+      "id": "bug-027",
+      "timestamp": "2026-06-28T09:02:09.319Z",
+      "error_message": "Incorrect value in code",
+      "file": "MyTracker/client/src/features/dashboard/Dashboard.jsx",
+      "root_cause": "Had '24px'",
+      "fix": "Changed to '16px'",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 6,
+      "last_seen": "2026-06-28T09:03:53.130Z"
+    },
+    {
+      "id": "bug-028",
+      "timestamp": "2026-06-28T09:02:48.139Z",
+      "error_message": "Incorrect value in code",
+      "file": "MyTracker/client/src/features/analytics/Analytics.jsx",
+      "root_cause": "Had '24px'",
+      "fix": "Changed to '16px'",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 2,
+      "last_seen": "2026-06-28T09:02:53.172Z"
+    },
+    {
+      "id": "bug-029",
+      "timestamp": "2026-06-28T09:03:08.027Z",
+      "error_message": "Incorrect value in code",
+      "file": "MyTracker/client/src/features/goals/GoalsPage.jsx",
+      "root_cause": "Had '24px'",
+      "fix": "Changed to '16px'",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 3,
+      "last_seen": "2026-06-28T09:03:18.565Z"
+    },
+    {
+      "id": "bug-030",
+      "timestamp": "2026-06-28T09:03:40.457Z",
+      "error_message": "Incorrect value in code",
+      "file": "MyTracker/client/src/features/review/AIReviewPage.jsx",
+      "root_cause": "Had '24px'",
+      "fix": "Changed to '16px'",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "jsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 2,
+      "last_seen": "2026-06-28T09:03:45.603Z"
+    }
+  ]
+}

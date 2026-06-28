@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\syste\\\\OneDrive\\\\Desktop\\\\Learning\\\\MyTracker\\\\client\\\\src\\\\features\\\\auth\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\syste\\\\OneDrive\\\\Desktop\\\\Learning\\\\MyTracker\\\\client\\\\src\\\\features\\\\dashboard\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\syste\\\\OneDrive\\\\Desktop\\\\Learning\\\\MyTracker\\\\client\\\\src\\\\features\\\\profile\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\syste\\\\OneDrive\\\\Desktop\\\\Learning\\\\MyTracker\\\\client\\\\src\\\\shared\\\\components\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\syste\\\\OneDrive\\\\Desktop\\\\Learning\\\\MyTracker\\\\client\\\\src\\\\shared\\\\hooks\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\syste\\\\OneDrive\\\\Desktop\\\\Learning\\\\MyTracker\\\\client\\\\src\\\\shared\\\\services\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\syste\\\\OneDrive\\\\Desktop\\\\Learning\\\\MyTracker\\\\client\\\\src\\\\context\")",
+      "PowerShell(Get-Process -Id \\(Get-NetTCPConnection -LocalPort 5000 -ErrorAction SilentlyContinue\\).OwningProcess -ErrorAction SilentlyContinue | Select-Object Id, ProcessName)",
+      "PowerShell(Stop-Process -Id 20472 -Force)",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\syste\\\\OneDrive\\\\Desktop\\\\Learning\\\\MyTracker\\\\server\\\\src\\\\seeds\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\syste\\\\OneDrive\\\\Desktop\\\\Learning\\\\MyTracker\\\\client\\\\src\\\\features\\\\nutrition\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\syste\\\\OneDrive\\\\Desktop\\\\Learning\\\\MyTracker\\\\client\\\\src\\\\features\\\\workout\")",
+      "Bash(npm install *)"
+    ]
+  }
+}

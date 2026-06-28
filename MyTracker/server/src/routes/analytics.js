@@ -1,0 +1,7 @@
+const router = require('express').Router();
+const { protect } = require('../middleware/auth');
+const { getAnalytics } = require('../controllers/analytics.controller');
+
+router.get('/', protect, getAnalytics);
+
+module.exports = router;
