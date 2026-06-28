@@ -152,3 +152,13 @@
 | 14:37 | Edited MyTracker/client/src/shared/services/api.js | 4→4 lines | ~31 |
 | 14:38 | Created MyTracker/.gitignore | — | ~8 |
 | 14:39 | Session end: 75 writes across 20 files (Dashboard.jsx, analytics.controller.js, analytics.js, index.js, Analytics.jsx) | 19 reads | ~31560 tok |
+| 14:45 | Session end: 75 writes across 20 files (Dashboard.jsx, analytics.controller.js, analytics.js, index.js, Analytics.jsx) | 19 reads | ~31560 tok |
+| 14:48 | Session end: 75 writes across 20 files (Dashboard.jsx, analytics.controller.js, analytics.js, index.js, Analytics.jsx) | 19 reads | ~31560 tok |
+| 14:49 | Session end: 75 writes across 20 files (Dashboard.jsx, analytics.controller.js, analytics.js, index.js, Analytics.jsx) | 19 reads | ~31560 tok |
+| 14:53 | Session end: 75 writes across 20 files (Dashboard.jsx, analytics.controller.js, analytics.js, index.js, Analytics.jsx) | 19 reads | ~31560 tok |
+| 15:00 | Created MyTracker/client/src/features/auth/Login.jsx | — | ~1411 |
+| 15:00 | Created MyTracker/client/src/features/auth/Register.jsx | — | ~1474 |
+| 15:02 | Session end: 77 writes across 22 files (Dashboard.jsx, analytics.controller.js, analytics.js, index.js, Analytics.jsx) | 23 reads | ~36282 tok |
+| 15:06 | Edited MyTracker/server/src/index.js | added 1 condition(s) | ~100 |
+| 15:06 | Edited MyTracker/client/index.html | 1→2 lines | ~32 |
+| 15:07 | Session end: 79 writes across 22 files (Dashboard.jsx, analytics.controller.js, analytics.js, index.js, Analytics.jsx) | 24 reads | ~36846 tok |

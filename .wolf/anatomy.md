@@ -1,6 +1,6 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-06-28T09:08:16.622Z
+> Auto-maintained by OpenWolf. Last scanned: 2026-06-28T09:36:26.346Z
 > Files: 71 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
@@ -23,7 +23,7 @@
 
 - `.gitignore` — Git ignore rules (~68 tok)
 - `.oxlintrc.json` (~66 tok)
-- `index.html` — MyTracker (~192 tok)
+- `index.html` — MyTracker (~207 tok)
 - `package-lock.json` — npm lock file (~20654 tok)
 - `package.json` — Node.js package manifest (~188 tok)
 - `README.md` — Project documentation (~253 tok)
@@ -50,8 +50,8 @@
 
 ## MyTracker/client/src/features/auth/
 
-- `Login.jsx` — Login — renders form (~692 tok)
-- `Register.jsx` — Register — renders form (~766 tok)
+- `Login.jsx` — C — renders form (~1411 tok)
+- `Register.jsx` — C — renders form (~1474 tok)
 
 ## MyTracker/client/src/features/dashboard/
 
@@ -104,7 +104,7 @@
 ## MyTracker/server/src/
 
 - `db.js` — Declares mongoose (~88 tok)
-- `index.js` — API routes: GET (1 endpoints) (~430 tok)
+- `index.js` — API routes: GET (1 endpoints) (~510 tok)
 
 ## MyTracker/server/src/controllers/
 

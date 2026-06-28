@@ -480,6 +480,22 @@
       "related_bugs": [],
       "occurrences": 2,
       "last_seen": "2026-06-28T09:03:45.603Z"
+    },
+    {
+      "id": "bug-031",
+      "timestamp": "2026-06-28T09:36:26.387Z",
+      "error_message": "Incorrect value in code",
+      "file": "MyTracker/client/index.html",
+      "root_cause": "Had \"apple-mobile-web-app-capable\"",
+      "fix": "Changed to \"mobile-web-app-capable\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "html"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-06-28T09:36:26.387Z"
     }
   ]
 }

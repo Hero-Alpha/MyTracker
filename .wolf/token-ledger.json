@@ -2,14 +2,14 @@
   "version": 1,
   "created_at": "2026-06-28T05:16:34.980Z",
   "lifetime": {
-    "total_tokens_estimated": 224226,
-    "total_reads": 87,
-    "total_writes": 391,
+    "total_tokens_estimated": 423594,
+    "total_reads": 210,
+    "total_writes": 847,
     "total_sessions": 1,
-    "anatomy_hits": 78,
-    "anatomy_misses": 2,
+    "anatomy_hits": 189,
+    "anatomy_misses": 8,
     "repeated_reads_blocked": 0,
-    "estimated_savings_vs_bare_cli": 15600
+    "estimated_savings_vs_bare_cli": 37800
   },
   "sessions": [
     {
@@ -2640,6 +2640,3126 @@
         "writes_count": 75,
         "repeated_reads_blocked": 0,
         "anatomy_lookups": 17
+      }
+    },
+    {
+      "id": "session-2026-06-28-1406",
+      "started": "2026-06-28T08:36:53.334Z",
+      "ended": "2026-06-28T09:15:21.348Z",
+      "reads": [
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 6624,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/measurements.controller.js",
+          "tokens_estimated": 355,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/logs.controller.js",
+          "tokens_estimated": 1239,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 418,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/models/AIReview.js",
+          "tokens_estimated": 187,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/gemini.service.js",
+          "tokens_estimated": 384,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/profile.controller.js",
+          "tokens_estimated": 495,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/context/AuthContext.jsx",
+          "tokens_estimated": 342,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/models/User.js",
+          "tokens_estimated": 348,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/nutrition.service.js",
+          "tokens_estimated": 641,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/middleware/rateLimiter.js",
+          "tokens_estimated": 220,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 77,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/index.html",
+          "tokens_estimated": 96,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/public/favicon.svg",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 590,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/services/api.js",
+          "tokens_estimated": 58,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/.gitignore",
+          "tokens_estimated": 6,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/.gitignore",
+          "tokens_estimated": 68,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/package.json",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 52,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 120,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 199,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 100,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 667,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 54,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/analytics.controller.js",
+          "tokens_estimated": 625,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/routes/analytics.js",
+          "tokens_estimated": 68,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 34,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 28,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 3281,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 74,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 70,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 34,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 328,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 830,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 84,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 138,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 224,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 223,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 67,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 246,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 38,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 13,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/gemini.service.js",
+          "tokens_estimated": 418,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/review.controller.js",
+          "tokens_estimated": 1109,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/routes/review.js",
+          "tokens_estimated": 112,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 27,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 3258,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 33,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 53,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 148,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 3068,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 53,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 39,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 87,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 256,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 51,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/middleware/rateLimiter.js",
+          "tokens_estimated": 104,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/hooks/useIsMobile.js",
+          "tokens_estimated": 123,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 378,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/public/favicon.svg",
+          "tokens_estimated": 94,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 125,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/index.html",
+          "tokens_estimated": 206,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 100,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 46,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 215,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 314,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 48,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 47,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 49,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 70,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 52,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 96,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 42,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 94,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 45,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 56,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/services/api.js",
+          "tokens_estimated": 31,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/.gitignore",
+          "tokens_estimated": 8,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 12272,
+        "output_tokens_estimated": 19288,
+        "reads_count": 19,
+        "writes_count": 75,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 17
+      }
+    },
+    {
+      "id": "session-2026-06-28-1406",
+      "started": "2026-06-28T08:36:53.334Z",
+      "ended": "2026-06-28T09:18:04.728Z",
+      "reads": [
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 6624,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/measurements.controller.js",
+          "tokens_estimated": 355,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/logs.controller.js",
+          "tokens_estimated": 1239,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 418,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/models/AIReview.js",
+          "tokens_estimated": 187,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/gemini.service.js",
+          "tokens_estimated": 384,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/profile.controller.js",
+          "tokens_estimated": 495,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/context/AuthContext.jsx",
+          "tokens_estimated": 342,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/models/User.js",
+          "tokens_estimated": 348,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/nutrition.service.js",
+          "tokens_estimated": 641,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/middleware/rateLimiter.js",
+          "tokens_estimated": 220,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 77,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/index.html",
+          "tokens_estimated": 96,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/public/favicon.svg",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 590,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/services/api.js",
+          "tokens_estimated": 58,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/.gitignore",
+          "tokens_estimated": 6,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/.gitignore",
+          "tokens_estimated": 68,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/package.json",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 52,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 120,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 199,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 100,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 667,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 54,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/analytics.controller.js",
+          "tokens_estimated": 625,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/routes/analytics.js",
+          "tokens_estimated": 68,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 34,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 28,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 3281,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 74,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 70,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 34,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 328,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 830,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 84,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 138,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 224,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 223,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 67,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 246,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 38,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 13,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/gemini.service.js",
+          "tokens_estimated": 418,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/review.controller.js",
+          "tokens_estimated": 1109,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/routes/review.js",
+          "tokens_estimated": 112,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 27,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 3258,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 33,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 53,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 148,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 3068,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 53,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 39,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 87,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 256,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 51,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/middleware/rateLimiter.js",
+          "tokens_estimated": 104,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/hooks/useIsMobile.js",
+          "tokens_estimated": 123,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 378,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/public/favicon.svg",
+          "tokens_estimated": 94,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 125,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/index.html",
+          "tokens_estimated": 206,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 100,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 46,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 215,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 314,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 48,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 47,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 49,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 70,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 52,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 96,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 42,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 94,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 45,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 56,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/services/api.js",
+          "tokens_estimated": 31,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/.gitignore",
+          "tokens_estimated": 8,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 12272,
+        "output_tokens_estimated": 19288,
+        "reads_count": 19,
+        "writes_count": 75,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 17
+      }
+    },
+    {
+      "id": "session-2026-06-28-1406",
+      "started": "2026-06-28T08:36:53.334Z",
+      "ended": "2026-06-28T09:19:31.996Z",
+      "reads": [
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 6624,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/measurements.controller.js",
+          "tokens_estimated": 355,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/logs.controller.js",
+          "tokens_estimated": 1239,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 418,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/models/AIReview.js",
+          "tokens_estimated": 187,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/gemini.service.js",
+          "tokens_estimated": 384,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/profile.controller.js",
+          "tokens_estimated": 495,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/context/AuthContext.jsx",
+          "tokens_estimated": 342,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/models/User.js",
+          "tokens_estimated": 348,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/nutrition.service.js",
+          "tokens_estimated": 641,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/middleware/rateLimiter.js",
+          "tokens_estimated": 220,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 77,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/index.html",
+          "tokens_estimated": 96,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/public/favicon.svg",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 590,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/services/api.js",
+          "tokens_estimated": 58,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/.gitignore",
+          "tokens_estimated": 6,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/.gitignore",
+          "tokens_estimated": 68,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/package.json",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 52,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 120,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 199,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 100,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 667,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 54,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/analytics.controller.js",
+          "tokens_estimated": 625,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/routes/analytics.js",
+          "tokens_estimated": 68,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 34,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 28,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 3281,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 74,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 70,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 34,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 328,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 830,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 84,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 138,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 224,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 223,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 67,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 246,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 38,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 13,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/gemini.service.js",
+          "tokens_estimated": 418,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/review.controller.js",
+          "tokens_estimated": 1109,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/routes/review.js",
+          "tokens_estimated": 112,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 27,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 3258,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 33,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 53,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 148,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 3068,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 53,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 39,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 87,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 256,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 51,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/middleware/rateLimiter.js",
+          "tokens_estimated": 104,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/hooks/useIsMobile.js",
+          "tokens_estimated": 123,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 378,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/public/favicon.svg",
+          "tokens_estimated": 94,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 125,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/index.html",
+          "tokens_estimated": 206,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 100,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 46,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 215,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 314,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 48,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 47,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 49,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 70,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 52,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 96,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 42,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 94,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 45,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 56,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/services/api.js",
+          "tokens_estimated": 31,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/.gitignore",
+          "tokens_estimated": 8,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 12272,
+        "output_tokens_estimated": 19288,
+        "reads_count": 19,
+        "writes_count": 75,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 17
+      }
+    },
+    {
+      "id": "session-2026-06-28-1406",
+      "started": "2026-06-28T08:36:53.334Z",
+      "ended": "2026-06-28T09:23:52.263Z",
+      "reads": [
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 6624,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/measurements.controller.js",
+          "tokens_estimated": 355,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/logs.controller.js",
+          "tokens_estimated": 1239,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 418,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/models/AIReview.js",
+          "tokens_estimated": 187,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/gemini.service.js",
+          "tokens_estimated": 384,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/profile.controller.js",
+          "tokens_estimated": 495,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/context/AuthContext.jsx",
+          "tokens_estimated": 342,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/models/User.js",
+          "tokens_estimated": 348,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/nutrition.service.js",
+          "tokens_estimated": 641,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/middleware/rateLimiter.js",
+          "tokens_estimated": 220,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 77,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/index.html",
+          "tokens_estimated": 96,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/public/favicon.svg",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 590,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/services/api.js",
+          "tokens_estimated": 58,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/.gitignore",
+          "tokens_estimated": 6,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/.gitignore",
+          "tokens_estimated": 68,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/package.json",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 52,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 120,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 199,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 100,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 667,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 54,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/analytics.controller.js",
+          "tokens_estimated": 625,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/routes/analytics.js",
+          "tokens_estimated": 68,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 34,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 28,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 3281,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 74,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 70,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 34,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 328,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 830,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 84,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 138,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 224,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 223,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 67,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 246,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 38,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 13,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/gemini.service.js",
+          "tokens_estimated": 418,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/review.controller.js",
+          "tokens_estimated": 1109,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/routes/review.js",
+          "tokens_estimated": 112,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 27,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 3258,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 33,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 53,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 148,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 3068,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 53,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 39,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 87,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 256,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 51,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/middleware/rateLimiter.js",
+          "tokens_estimated": 104,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/hooks/useIsMobile.js",
+          "tokens_estimated": 123,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 378,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/public/favicon.svg",
+          "tokens_estimated": 94,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 125,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/index.html",
+          "tokens_estimated": 206,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 100,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 46,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 215,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 314,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 48,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 47,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 49,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 70,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 52,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 96,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 42,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 94,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 45,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 56,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/services/api.js",
+          "tokens_estimated": 31,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/.gitignore",
+          "tokens_estimated": 8,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 12272,
+        "output_tokens_estimated": 19288,
+        "reads_count": 19,
+        "writes_count": 75,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 17
+      }
+    },
+    {
+      "id": "session-2026-06-28-1406",
+      "started": "2026-06-28T08:36:53.334Z",
+      "ended": "2026-06-28T09:32:01.933Z",
+      "reads": [
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 6624,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/measurements.controller.js",
+          "tokens_estimated": 355,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/logs.controller.js",
+          "tokens_estimated": 1239,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 418,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/models/AIReview.js",
+          "tokens_estimated": 187,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/gemini.service.js",
+          "tokens_estimated": 384,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/profile.controller.js",
+          "tokens_estimated": 495,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/context/AuthContext.jsx",
+          "tokens_estimated": 342,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/models/User.js",
+          "tokens_estimated": 348,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/nutrition.service.js",
+          "tokens_estimated": 641,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/middleware/rateLimiter.js",
+          "tokens_estimated": 220,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 77,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/index.html",
+          "tokens_estimated": 96,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/public/favicon.svg",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 590,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/services/api.js",
+          "tokens_estimated": 58,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/.gitignore",
+          "tokens_estimated": 6,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/.gitignore",
+          "tokens_estimated": 68,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/package.json",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/auth/Login.jsx",
+          "tokens_estimated": 692,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/auth/Register.jsx",
+          "tokens_estimated": 766,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Input.jsx",
+          "tokens_estimated": 183,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Button.jsx",
+          "tokens_estimated": 196,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 52,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 120,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 199,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 100,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 667,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 54,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/analytics.controller.js",
+          "tokens_estimated": 625,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/routes/analytics.js",
+          "tokens_estimated": 68,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 34,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 28,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 3281,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 74,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 70,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 34,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 328,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 830,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 84,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 138,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 224,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 223,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 67,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 246,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 38,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 13,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/gemini.service.js",
+          "tokens_estimated": 418,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/review.controller.js",
+          "tokens_estimated": 1109,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/routes/review.js",
+          "tokens_estimated": 112,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 27,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 3258,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 33,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 53,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 148,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 3068,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 53,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 39,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 87,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 256,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 51,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/middleware/rateLimiter.js",
+          "tokens_estimated": 104,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/hooks/useIsMobile.js",
+          "tokens_estimated": 123,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 378,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/public/favicon.svg",
+          "tokens_estimated": 94,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 125,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/index.html",
+          "tokens_estimated": 206,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 100,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 46,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 215,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 314,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 48,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 47,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 49,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 70,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 52,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 96,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 42,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 94,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 45,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 56,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/services/api.js",
+          "tokens_estimated": 31,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/.gitignore",
+          "tokens_estimated": 8,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/auth/Login.jsx",
+          "tokens_estimated": 1411,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/auth/Register.jsx",
+          "tokens_estimated": 1474,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 14109,
+        "output_tokens_estimated": 22173,
+        "reads_count": 23,
+        "writes_count": 77,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 21
+      }
+    },
+    {
+      "id": "session-2026-06-28-1406",
+      "started": "2026-06-28T08:36:53.334Z",
+      "ended": "2026-06-28T09:37:34.092Z",
+      "reads": [
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 6624,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/measurements.controller.js",
+          "tokens_estimated": 355,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/logs.controller.js",
+          "tokens_estimated": 1239,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 418,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/models/AIReview.js",
+          "tokens_estimated": 187,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/gemini.service.js",
+          "tokens_estimated": 384,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/profile.controller.js",
+          "tokens_estimated": 495,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/context/AuthContext.jsx",
+          "tokens_estimated": 342,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/models/User.js",
+          "tokens_estimated": 348,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/nutrition.service.js",
+          "tokens_estimated": 641,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/middleware/rateLimiter.js",
+          "tokens_estimated": 220,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 77,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/index.html",
+          "tokens_estimated": 96,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/public/favicon.svg",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 590,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/services/api.js",
+          "tokens_estimated": 58,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/.gitignore",
+          "tokens_estimated": 6,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/.gitignore",
+          "tokens_estimated": 68,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/package.json",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/auth/Login.jsx",
+          "tokens_estimated": 692,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/auth/Register.jsx",
+          "tokens_estimated": 766,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Input.jsx",
+          "tokens_estimated": 183,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Button.jsx",
+          "tokens_estimated": 196,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 430,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 52,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 120,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 199,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 100,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 667,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 54,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/analytics.controller.js",
+          "tokens_estimated": 625,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/routes/analytics.js",
+          "tokens_estimated": 68,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 34,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 28,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 3281,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 74,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 70,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 34,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 328,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 830,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 84,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 138,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 224,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 223,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 67,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 246,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 38,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 13,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/services/gemini.service.js",
+          "tokens_estimated": 418,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/review.controller.js",
+          "tokens_estimated": 1109,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/routes/review.js",
+          "tokens_estimated": 112,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 27,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 3258,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 33,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 53,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 148,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 3068,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/App.jsx",
+          "tokens_estimated": 53,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 39,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/components/Sidebar.jsx",
+          "tokens_estimated": 87,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 256,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 51,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/middleware/rateLimiter.js",
+          "tokens_estimated": 104,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/hooks/useIsMobile.js",
+          "tokens_estimated": 123,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 378,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/public/favicon.svg",
+          "tokens_estimated": 94,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/vite.config.js",
+          "tokens_estimated": 125,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/index.html",
+          "tokens_estimated": 206,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 100,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 46,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 215,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 314,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 48,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 47,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 49,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 70,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/analytics/Analytics.jsx",
+          "tokens_estimated": 52,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 96,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 32,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/goals/GoalsPage.jsx",
+          "tokens_estimated": 42,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 94,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 45,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/review/AIReviewPage.jsx",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/dashboard/Dashboard.jsx",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 56,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/controllers/auth.controller.js",
+          "tokens_estimated": 50,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/shared/services/api.js",
+          "tokens_estimated": 31,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/.gitignore",
+          "tokens_estimated": 8,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/auth/Login.jsx",
+          "tokens_estimated": 1411,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/src/features/auth/Register.jsx",
+          "tokens_estimated": 1474,
+          "action": "create"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/server/src/index.js",
+          "tokens_estimated": 100,
+          "action": "edit"
+        },
+        {
+          "file": "c:/Users/syste/OneDrive/Desktop/Learning/MyTracker/client/index.html",
+          "tokens_estimated": 34,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 14539,
+        "output_tokens_estimated": 22307,
+        "reads_count": 24,
+        "writes_count": 79,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 22
       }
     }
   ],
