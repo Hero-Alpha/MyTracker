@@ -55,5 +55,21 @@ app.use('/api/review',        reviewRoutes);
 
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 
+// Global error handler — sets CORS headers so client sees actual error, not a fake CORS block
+app.use((err, req, res, next) => {
+  console.error('Unhandled error:', err.message);
+  const origin = req.headers.origin;
+  if (origin && (origin.endsWith('.onrender.com') || allowedOrigins.includes(origin))) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Access-Control-Allow-Credentials', 'true');
+  }
+  res.status(err.status || 500).json({ message: err.message || 'Internal server error' });
+});
+
+// Prevent unhandled promise rejections from crashing the process
+process.on('unhandledRejection', (reason) => {
+  console.error('Unhandled rejection:', reason);
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

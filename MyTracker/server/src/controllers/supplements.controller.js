@@ -17,13 +17,13 @@ async function parseLabel(req, res) {
 }
 
 async function saveSupplement(req, res) {
-  const { name, servingSize, servingUnit, nutrition, commonUnits } = req.body;
-
-  if (!name || !servingSize || !servingUnit || !nutrition) {
-    return res.status(400).json({ message: 'name, servingSize, servingUnit and nutrition are required' });
-  }
-
   try {
+    const { name, servingSize, servingUnit, nutrition, commonUnits } = req.body || {};
+
+    if (!name || !servingSize || !servingUnit || !nutrition) {
+      return res.status(400).json({ message: 'name, servingSize, servingUnit and nutrition are required' });
+    }
+
     const existing = await Food.findOne({ name, source: 'user', userId: req.userId, category: 'supplement' });
     if (existing) {
       Object.assign(existing, { servingSize, servingUnit, nutrition, commonUnits: commonUnits || [] });
@@ -60,8 +60,8 @@ async function getUserSupplements(req, res) {
 }
 
 async function updateSupplement(req, res) {
-  const { name, servingSize, servingUnit, nutrition, commonUnits } = req.body;
   try {
+    const { name, servingSize, servingUnit, nutrition, commonUnits } = req.body || {};
     const supp = await Food.findOne({ _id: req.params.id, userId: req.userId, source: 'user', category: 'supplement' });
     if (!supp) return res.status(404).json({ message: 'Not found' });
     Object.assign(supp, { name, servingSize: Number(servingSize), servingUnit, nutrition, commonUnits: commonUnits || [] });
