@@ -1,6 +1,6 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-06-28T09:36:26.346Z
+> Auto-maintained by OpenWolf. Last scanned: 2026-06-29T04:50:36.004Z
 > Files: 71 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
@@ -64,7 +64,7 @@
 ## MyTracker/client/src/features/nutrition/
 
 - `LogFoodModal.jsx` — C (~2579 tok)
-- `SupplementModal.jsx` — C (~3856 tok)
+- `SupplementModal.jsx` — C (~3896 tok)
 
 ## MyTracker/client/src/features/profile/
 
@@ -115,7 +115,7 @@
 - `measurements.controller.js` — BodyMeasurement: getMeasurements, getLatest, addMeasurement (~355 tok)
 - `profile.controller.js` — User: getProfile, updateProfile (~495 tok)
 - `review.controller.js` — DailyLog: getLatestReview, generateReview (~1109 tok)
-- `supplements.controller.js` — Food: parseLabel, saveSupplement, getUserSupplements (~486 tok)
+- `supplements.controller.js` — Food: parseLabel, saveSupplement, getUserSupplements (~500 tok)
 - `workouts.controller.js` — WorkoutTemplate: getTemplates, createTemplate, updateTemplate, deleteTemplate (~385 tok)
 
 ## MyTracker/server/src/middleware/
@@ -152,5 +152,5 @@
 
 ## MyTracker/server/src/services/
 
-- `gemini.service.js` — genAI: parseSupplementLabel, generateWeeklyReview (~789 tok)
+- `gemini.service.js` — genAI: extractJSON, parseSupplementLabel, generateWeeklyReview (~937 tok)
 - `nutrition.service.js` — ACTIVITY_MULTIPLIERS: calculateBMR, calculateDailyTargets, computeMealTotals, computeDayTotals, computeItemNutrition (~641 tok)
