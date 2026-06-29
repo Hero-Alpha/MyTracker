@@ -23,17 +23,31 @@ Use this exact structure:
 If a value is not visible on the label, use 0.
 If there is no scoop info, return an empty commonUnits array.`;
 
+function extractJSON(raw) {
+  // Strip markdown code fences (any variant)
+  let text = raw.replace(/```[\w]*\n?/g, '').replace(/```/g, '').trim();
+  // Find the outermost { } block in case there's surrounding text
+  const start = text.indexOf('{');
+  const end   = text.lastIndexOf('}');
+  if (start === -1 || end === -1) throw new Error(`No JSON object in Gemini response: ${text.substring(0, 200)}`);
+  return JSON.parse(text.substring(start, end + 1));
+}
+
 async function parseSupplementLabel(imageBuffer, mimeType = 'image/jpeg') {
+  // Gemini doesn't support heic/heif — normalise to jpeg for safety
+  const safeMime = ['image/jpeg', 'image/png', 'image/webp', 'image/gif'].includes(mimeType)
+    ? mimeType
+    : 'image/jpeg';
+
   const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
 
   const result = await model.generateContent([
-    { inlineData: { data: imageBuffer.toString('base64'), mimeType } },
+    { inlineData: { data: imageBuffer.toString('base64'), mimeType: safeMime } },
     PARSE_PROMPT,
   ]);
 
   const raw = result.response.text().trim();
-  const cleaned = raw.replace(/^```(?:json)?\n?|\n?```$/g, '').trim();
-  return JSON.parse(cleaned);
+  return extractJSON(raw);
 }
 
 const REVIEW_PROMPT = (payload) => `You are a fitness and nutrition coach AI. Analyze this user's weekly health data and give a structured review.
@@ -63,8 +77,7 @@ async function generateWeeklyReview(payload) {
 
   const result = await model.generateContent(REVIEW_PROMPT(payload));
   const raw     = result.response.text().trim();
-  const cleaned = raw.replace(/^```(?:json)?\n?|\n?```$/g, '').trim();
-  return JSON.parse(cleaned);
+  return extractJSON(raw);
 }
 
 module.exports = { parseSupplementLabel, generateWeeklyReview };

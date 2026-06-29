@@ -11,8 +11,8 @@ async function parseLabel(req, res) {
     const parsed = await parseSupplementLabel(req.file.buffer, mimeType);
     res.json({ parsed });
   } catch (err) {
-    console.error('Gemini parse error:', err.message);
-    res.status(502).json({ message: 'Failed to parse label. Try a clearer image.' });
+    console.error('Gemini parse error:', err?.message, err?.status, JSON.stringify(err?.errorDetails));
+    res.status(502).json({ message: 'Failed to parse label.', detail: err?.message });
   }
 }
 
