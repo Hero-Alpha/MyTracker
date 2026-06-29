@@ -23,47 +23,67 @@ async function saveSupplement(req, res) {
     return res.status(400).json({ message: 'name, servingSize, servingUnit and nutrition are required' });
   }
 
-  const existing = await Food.findOne({ name, source: 'user', userId: req.userId, category: 'supplement' });
-  if (existing) {
-    Object.assign(existing, { servingSize, servingUnit, nutrition, commonUnits: commonUnits || [] });
-    await existing.save();
-    return res.json({ food: existing });
+  try {
+    const existing = await Food.findOne({ name, source: 'user', userId: req.userId, category: 'supplement' });
+    if (existing) {
+      Object.assign(existing, { servingSize, servingUnit, nutrition, commonUnits: commonUnits || [] });
+      await existing.save();
+      return res.json({ food: existing });
+    }
+
+    const food = await Food.create({
+      name,
+      source: 'user',
+      userId: req.userId,
+      servingSize: Number(servingSize),
+      servingUnit,
+      nutrition,
+      commonUnits: commonUnits || [],
+      category: 'supplement',
+    });
+
+    res.status(201).json({ food });
+  } catch (err) {
+    console.error('saveSupplement error:', err.message);
+    res.status(500).json({ message: err.message });
   }
-
-  const food = await Food.create({
-    name,
-    source: 'user',
-    userId: req.userId,
-    servingSize: Number(servingSize),
-    servingUnit,
-    nutrition,
-    commonUnits: commonUnits || [],
-    category: 'supplement',
-  });
-
-  res.status(201).json({ food });
 }
 
 async function getUserSupplements(req, res) {
-  const supplements = await Food.find({ source: 'user', userId: req.userId, category: 'supplement', isActive: true }).lean();
-  res.json({ supplements });
+  try {
+    const supplements = await Food.find({ source: 'user', userId: req.userId, category: 'supplement', isActive: true }).lean();
+    res.json({ supplements });
+  } catch (err) {
+    console.error('getUserSupplements error:', err.message);
+    res.status(500).json({ message: err.message });
+  }
 }
 
 async function updateSupplement(req, res) {
   const { name, servingSize, servingUnit, nutrition, commonUnits } = req.body;
-  const supp = await Food.findOne({ _id: req.params.id, userId: req.userId, source: 'user', category: 'supplement' });
-  if (!supp) return res.status(404).json({ message: 'Not found' });
-  Object.assign(supp, { name, servingSize: Number(servingSize), servingUnit, nutrition, commonUnits: commonUnits || [] });
-  await supp.save();
-  res.json({ food: supp });
+  try {
+    const supp = await Food.findOne({ _id: req.params.id, userId: req.userId, source: 'user', category: 'supplement' });
+    if (!supp) return res.status(404).json({ message: 'Not found' });
+    Object.assign(supp, { name, servingSize: Number(servingSize), servingUnit, nutrition, commonUnits: commonUnits || [] });
+    await supp.save();
+    res.json({ food: supp });
+  } catch (err) {
+    console.error('updateSupplement error:', err.message);
+    res.status(500).json({ message: err.message });
+  }
 }
 
 async function deleteSupplement(req, res) {
-  const supp = await Food.findOne({ _id: req.params.id, userId: req.userId, source: 'user', category: 'supplement' });
-  if (!supp) return res.status(404).json({ message: 'Not found' });
-  supp.isActive = false;
-  await supp.save();
-  res.json({ message: 'Deleted' });
+  try {
+    const supp = await Food.findOne({ _id: req.params.id, userId: req.userId, source: 'user', category: 'supplement' });
+    if (!supp) return res.status(404).json({ message: 'Not found' });
+    supp.isActive = false;
+    await supp.save();
+    res.json({ message: 'Deleted' });
+  } catch (err) {
+    console.error('deleteSupplement error:', err.message);
+    res.status(500).json({ message: err.message });
+  }
 }
 
 module.exports = { parseLabel, saveSupplement, getUserSupplements, updateSupplement, deleteSupplement };
