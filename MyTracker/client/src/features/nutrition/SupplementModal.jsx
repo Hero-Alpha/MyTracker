@@ -48,7 +48,9 @@ export default function SupplementModal({ date, meal, onClose, onAdded }) {
       setParsed(res.data.parsed);
       setStep(STEPS.REVIEW);
     } catch (err) {
-      setError(err.response?.data?.message || 'Failed to parse label. Try a clearer image.');
+      const detail = err.response?.data?.detail;
+      console.error('[parse error]', err.response?.status, err.response?.data);
+      setError((err.response?.data?.message || 'Failed to parse label.') + (detail ? ` — ${detail}` : ''));
     } finally {
       setUploading(false);
     }
