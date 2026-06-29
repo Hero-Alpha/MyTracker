@@ -49,4 +49,21 @@ async function getUserSupplements(req, res) {
   res.json({ supplements });
 }
 
-module.exports = { parseLabel, saveSupplement, getUserSupplements };
+async function updateSupplement(req, res) {
+  const { name, servingSize, servingUnit, nutrition, commonUnits } = req.body;
+  const supp = await Food.findOne({ _id: req.params.id, userId: req.userId, source: 'user', category: 'supplement' });
+  if (!supp) return res.status(404).json({ message: 'Not found' });
+  Object.assign(supp, { name, servingSize: Number(servingSize), servingUnit, nutrition, commonUnits: commonUnits || [] });
+  await supp.save();
+  res.json({ food: supp });
+}
+
+async function deleteSupplement(req, res) {
+  const supp = await Food.findOne({ _id: req.params.id, userId: req.userId, source: 'user', category: 'supplement' });
+  if (!supp) return res.status(404).json({ message: 'Not found' });
+  supp.isActive = false;
+  await supp.save();
+  res.json({ message: 'Deleted' });
+}
+
+module.exports = { parseLabel, saveSupplement, getUserSupplements, updateSupplement, deleteSupplement };

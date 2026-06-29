@@ -1,6 +1,6 @@
 const express = require('express');
 const multer = require('multer');
-const { parseLabel, saveSupplement, getUserSupplements } = require('../controllers/supplements.controller');
+const { parseLabel, saveSupplement, getUserSupplements, updateSupplement, deleteSupplement } = require('../controllers/supplements.controller');
 const { protect } = require('../middleware/auth');
 const { geminiLimiter } = require('../middleware/rateLimiter');
 
@@ -20,5 +20,7 @@ const router = express.Router();
 router.post('/parse',  protect, geminiLimiter, upload.single('label'), parseLabel);
 router.post('/',       protect, saveSupplement);
 router.get('/',        protect, getUserSupplements);
+router.put('/:id',     protect, updateSupplement);
+router.delete('/:id',  protect, deleteSupplement);
 
 module.exports = router;

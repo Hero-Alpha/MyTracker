@@ -7,6 +7,7 @@ import Dashboard from './features/dashboard/Dashboard';
 import Analytics from './features/analytics/Analytics';
 import AIReviewPage from './features/review/AIReviewPage';
 import GoalsPage from './features/goals/GoalsPage';
+import SupplementsPage from './features/supplements/SupplementsPage';
 
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth();
@@ -32,7 +33,8 @@ function AppRoutes() {
       <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
       <Route path="/analytics" element={<ProtectedRoute><Analytics /></ProtectedRoute>} />
       <Route path="/review"    element={<ProtectedRoute><AIReviewPage /></ProtectedRoute>} />
-      <Route path="/goals"     element={<ProtectedRoute><GoalsPage /></ProtectedRoute>} />
+      <Route path="/goals"       element={<ProtectedRoute><GoalsPage /></ProtectedRoute>} />
+      <Route path="/supplements" element={<ProtectedRoute><SupplementsPage /></ProtectedRoute>} />
       <Route path="*"          element={<Navigate to="/login" replace />} />
     </Routes>
   );

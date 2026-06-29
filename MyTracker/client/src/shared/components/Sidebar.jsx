@@ -1,5 +1,5 @@
 import { useNavigate, useLocation } from 'react-router-dom';
-import { FiX, FiHome, FiBarChart2, FiZap, FiTarget } from 'react-icons/fi';
+import { FiX, FiHome, FiBarChart2, FiZap, FiTarget, FiPackage } from 'react-icons/fi';
 
 const C = {
   surface: '#0d1117', border: '#1f2937',
@@ -8,10 +8,11 @@ const C = {
 };
 
 const NAV = [
-  { path: '/dashboard', label: 'Dashboard',        Icon: FiHome      },
-  { path: '/analytics', label: 'Analytics',        Icon: FiBarChart2 },
-  { path: '/goals',     label: 'Goals',            Icon: FiTarget    },
-  { path: '/review',    label: 'AI Weekly Review', Icon: FiZap       },
+  { path: '/dashboard',   label: 'Dashboard',        Icon: FiHome      },
+  { path: '/analytics',   label: 'Analytics',        Icon: FiBarChart2 },
+  { path: '/goals',       label: 'Goals',            Icon: FiTarget    },
+  { path: '/supplements', label: 'Supplements',      Icon: FiPackage   },
+  { path: '/review',      label: 'AI Weekly Review', Icon: FiZap       },
 ];
 
 export default function Sidebar({ isOpen, onClose }) {

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { FiX, FiUpload, FiPlus, FiCheck } from 'react-icons/fi';
+import { FiX, FiUpload, FiPlus, FiCheck, FiPackage } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 import api from '../../shared/services/api';
 
 const C = {
@@ -17,6 +18,7 @@ const C = {
 const STEPS = { LIST: 'list', UPLOAD: 'upload', REVIEW: 'review', QUANTITY: 'quantity' };
 
 export default function SupplementModal({ date, meal, onClose, onAdded }) {
+  const navigate = useNavigate();
   const [step, setStep]               = useState(STEPS.LIST);
   const [supplements, setSupplements] = useState([]);
   const [selected, setSelected]       = useState(null);
@@ -136,9 +138,15 @@ export default function SupplementModal({ date, meal, onClose, onAdded }) {
         {/* STEP: LIST */}
         {step === STEPS.LIST && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', overflowY: 'auto' }}>
-            {supplements.length > 0 && (
+            {supplements.length > 0 ? (
               <>
-                <p style={{ fontSize: '12px', color: C.dim, fontWeight: 600 }}>YOUR SUPPLEMENTS</p>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <p style={{ fontSize: '12px', color: C.dim, fontWeight: 600 }}>YOUR SUPPLEMENTS</p>
+                  <button onClick={() => { onClose(); navigate('/supplements'); }}
+                    style={{ background: 'none', border: 'none', fontSize: '12px', color: C.green, cursor: 'pointer', fontWeight: 600 }}>
+                    Manage →
+                  </button>
+                </div>
                 {supplements.map(s => (
                   <button key={s._id} onClick={() => selectSupplement(s)}
                     style={{ textAlign: 'left', backgroundColor: C.surface, border: `1px solid ${C.border}`, borderRadius: '12px', padding: '14px 16px', cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -152,14 +160,19 @@ export default function SupplementModal({ date, meal, onClose, onAdded }) {
                   </button>
                 ))}
               </>
+            ) : (
+              <div style={{ textAlign: 'center', padding: '24px 16px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}>
+                <FiPackage size={28} color={C.dim} />
+                <div>
+                  <p style={{ fontSize: '14px', fontWeight: 600, color: C.text, margin: 0 }}>No supplements saved</p>
+                  <p style={{ fontSize: '12px', color: C.dim, marginTop: '4px' }}>Go to the Supplements page to add your supplements with their macros</p>
+                </div>
+                <button onClick={() => { onClose(); navigate('/supplements'); }}
+                  style={{ padding: '9px 18px', borderRadius: '10px', border: 'none', backgroundColor: C.green, color: '#fff', fontSize: '13px', fontWeight: 700, cursor: 'pointer' }}>
+                  Go to Supplements
+                </button>
+              </div>
             )}
-
-            <button onClick={() => setStep(STEPS.UPLOAD)}
-              style={{ width: '100%', padding: '14px', borderRadius: '12px', border: `1px dashed ${C.muted}`, backgroundColor: 'transparent', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
-              <FiUpload size={22} color={C.amber} />
-              <span style={{ fontSize: '14px', fontWeight: 700, color: C.amber }}>Scan New Supplement Label</span>
-              <span style={{ fontSize: '12px', color: C.dim }}>Take a photo of the nutrition label — Gemini will read it</span>
-            </button>
           </div>
         )}
 
