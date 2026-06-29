@@ -20,18 +20,25 @@ const app = express();
 connectDB();
 
 const allowedOrigins = [
-  process.env.CLIENT_URL,
+  process.env.CLIENT_URL?.replace(/\/$/, ''),
   'http://localhost:5173',
   'http://localhost:3000',
 ].filter(Boolean);
 
-app.use(cors({
+const corsOptions = {
   origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin)) return callback(null, true);
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin) || origin.endsWith('.onrender.com')) {
+      return callback(null, true);
+    }
     callback(new Error(`CORS: origin ${origin} not allowed`));
   },
   credentials: true,
-}));
+};
+
+// Handle preflight for all routes
+app.options('*', cors(corsOptions));
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
 app.use(globalLimiter);
