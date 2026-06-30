@@ -37,7 +37,7 @@ async function parseSupplementLabel(imageBuffer, mimeType = 'image/jpeg') {
   const safeMime = ['image/jpeg', 'image/png', 'image/webp', 'image/gif'].includes(mimeType)
     ? mimeType : 'image/jpeg';
 
-  const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-lite' });
   const result = await model.generateContent(
     [{ inlineData: { data: imageBuffer.toString('base64'), mimeType: safeMime } }, PARSE_PROMPT],
     { timeout: 20000 },
@@ -55,7 +55,7 @@ JSON structure (exactly):
 Rules: be specific with numbers, Indian food context for grocery list, 1 sentence per item.`;
 
 async function generateWeeklyReview(payload) {
-  const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-lite' });
   const result = await model.generateContent(REVIEW_PROMPT(payload), { timeout: 20000 });
   return extractJSON(result.response.text().trim());
 }
