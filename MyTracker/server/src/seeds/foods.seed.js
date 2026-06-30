@@ -111,6 +111,74 @@ const foods = [
   { name: 'Tomato Ketchup',     category: 'other',     servingSize: 100, servingUnit: 'g', nutrition: { calories: 101, protein: 1.7,  carbs: 25.5, fat: 0.2,  sugar: 21.0, fiber: 0.5 }, commonUnits: [{ unit: '1 tbsp', grams: 15 }] },
 ];
 
+// New foods added in later updates — upserted on server startup
+const newFoods = [
+  // ── FRIED / COOKED VARIANTS ──────────────────────────────────────────────
+  { name: 'Fried Egg',            category: 'protein',   servingSize: 100, servingUnit: 'g', nutrition: { calories: 196, protein: 13.6, carbs: 0.4,  fat: 14.8, sugar: 0.4, fiber: 0 },   commonUnits: [{ unit: '1 egg', grams: 46 }] },
+  { name: 'Scrambled Egg',        category: 'protein',   servingSize: 100, servingUnit: 'g', nutrition: { calories: 149, protein: 10.1, carbs: 1.6,  fat: 11.4, sugar: 1.4, fiber: 0 },   commonUnits: [{ unit: '1 egg', grams: 65 }] },
+  { name: 'Boiled Egg',           category: 'protein',   servingSize: 100, servingUnit: 'g', nutrition: { calories: 155, protein: 12.6, carbs: 1.1,  fat: 10.6, sugar: 1.1, fiber: 0 },   commonUnits: [{ unit: '1 egg', grams: 50 }] },
+  { name: 'Aloo Fry (fried potato)', category: 'vegetable', servingSize: 100, servingUnit: 'g', nutrition: { calories: 142, protein: 2.0,  carbs: 20.0, fat: 6.0,  sugar: 1.0, fiber: 1.8 }, commonUnits: [{ unit: '1 katori', grams: 100 }] },
+  { name: 'French Fries',         category: 'snack',     servingSize: 100, servingUnit: 'g', nutrition: { calories: 312, protein: 3.4,  carbs: 41.4, fat: 14.7, sugar: 0.5, fiber: 3.8 }, commonUnits: [{ unit: '1 medium portion', grams: 120 }, { unit: '1 small portion', grams: 80 }] },
+  { name: 'Aloo Sabzi',           category: 'vegetable', servingSize: 100, servingUnit: 'g', nutrition: { calories: 115, protein: 1.8,  carbs: 17.0, fat: 4.5,  sugar: 1.0, fiber: 1.5 }, commonUnits: [{ unit: '1 katori', grams: 150 }] },
+  { name: 'Paneer Bhurji',        category: 'protein',   servingSize: 100, servingUnit: 'g', nutrition: { calories: 210, protein: 12.0, carbs: 4.0,  fat: 16.0, sugar: 2.0, fiber: 0.5 }, commonUnits: [{ unit: '1 katori', grams: 150 }] },
+  { name: 'Butter Chicken',       category: 'protein',   servingSize: 100, servingUnit: 'g', nutrition: { calories: 150, protein: 14.0, carbs: 6.0,  fat: 8.0,  sugar: 3.0, fiber: 0.5 }, commonUnits: [{ unit: '1 katori', grams: 200 }] },
+  { name: 'Palak Paneer',         category: 'protein',   servingSize: 100, servingUnit: 'g', nutrition: { calories: 112, protein: 7.0,  carbs: 5.5,  fat: 7.5,  sugar: 1.5, fiber: 1.5 }, commonUnits: [{ unit: '1 katori', grams: 200 }] },
+  { name: 'Dal Makhani',          category: 'protein',   servingSize: 100, servingUnit: 'g', nutrition: { calories: 124, protein: 6.5,  carbs: 15.0, fat: 4.5,  sugar: 1.5, fiber: 4.0 }, commonUnits: [{ unit: '1 katori', grams: 200 }] },
+  { name: 'Chicken Biryani',      category: 'grain',     servingSize: 100, servingUnit: 'g', nutrition: { calories: 190, protein: 10.0, carbs: 25.0, fat: 5.0,  sugar: 1.0, fiber: 0.8 }, commonUnits: [{ unit: '1 plate', grams: 350 }] },
+  { name: 'Veg Biryani',          category: 'grain',     servingSize: 100, servingUnit: 'g', nutrition: { calories: 155, protein: 4.0,  carbs: 28.0, fat: 3.5,  sugar: 2.0, fiber: 2.0 }, commonUnits: [{ unit: '1 plate', grams: 300 }] },
+  { name: 'Naan',                 category: 'grain',     servingSize: 100, servingUnit: 'g', nutrition: { calories: 310, protein: 9.0,  carbs: 55.0, fat: 6.0,  sugar: 2.5, fiber: 2.0 }, commonUnits: [{ unit: '1 naan', grams: 90 }] },
+  { name: 'Pav Bhaji',            category: 'other',     servingSize: 100, servingUnit: 'g', nutrition: { calories: 152, protein: 3.8,  carbs: 24.0, fat: 5.0,  sugar: 3.0, fiber: 2.5 }, commonUnits: [{ unit: '1 serving (bhaji)', grams: 200 }] },
+  { name: 'Samosa',               category: 'snack',     servingSize: 100, servingUnit: 'g', nutrition: { calories: 308, protein: 5.2,  carbs: 36.0, fat: 16.0, sugar: 1.5, fiber: 2.0 }, commonUnits: [{ unit: '1 samosa', grams: 60 }] },
+  { name: 'Vada Pav',             category: 'snack',     servingSize: 100, servingUnit: 'g', nutrition: { calories: 298, protein: 6.0,  carbs: 40.0, fat: 12.5, sugar: 2.0, fiber: 2.0 }, commonUnits: [{ unit: '1 piece', grams: 120 }] },
+
+  // ── CEREALS & BREAKFAST ──────────────────────────────────────────────────
+  { name: "Kellogg's Muesli",     category: 'grain',     servingSize: 100, servingUnit: 'g', nutrition: { calories: 354, protein: 8.0,  carbs: 68.0, fat: 6.0,  sugar: 18.0, fiber: 5.0 }, commonUnits: [{ unit: '1 bowl (45g)', grams: 45 }] },
+  { name: "Kellogg's Corn Flakes",category: 'grain',     servingSize: 100, servingUnit: 'g', nutrition: { calories: 357, protein: 7.5,  carbs: 84.0, fat: 0.9,  sugar: 7.5,  fiber: 1.2 }, commonUnits: [{ unit: '1 bowl (30g)', grams: 30 }] },
+  { name: "Kellogg's Chocos",     category: 'grain',     servingSize: 100, servingUnit: 'g', nutrition: { calories: 389, protein: 6.5,  carbs: 82.0, fat: 4.5,  sugar: 35.0, fiber: 3.0 }, commonUnits: [{ unit: '1 bowl (30g)', grams: 30 }] },
+  { name: 'Granola',              category: 'grain',     servingSize: 100, servingUnit: 'g', nutrition: { calories: 471, protein: 10.0, carbs: 64.0, fat: 20.0, sugar: 24.0, fiber: 5.0 }, commonUnits: [{ unit: '1 cup', grams: 90 }] },
+  { name: 'Cornflakes (generic)', category: 'grain',     servingSize: 100, servingUnit: 'g', nutrition: { calories: 357, protein: 7.0,  carbs: 84.0, fat: 1.0,  sugar: 8.0,  fiber: 1.0 }, commonUnits: [{ unit: '1 bowl (30g)', grams: 30 }] },
+
+  // ── FAST FOOD / PACKAGED ─────────────────────────────────────────────────
+  { name: 'Maggi Noodles (cooked)', category: 'grain',   servingSize: 100, servingUnit: 'g', nutrition: { calories: 156, protein: 4.0,  carbs: 22.0, fat: 5.5,  sugar: 0.5, fiber: 0.5 }, commonUnits: [{ unit: '1 packet cooked', grams: 200 }] },
+  { name: 'Pizza (cheese, 1 slice)', category: 'snack',  servingSize: 100, servingUnit: 'g', nutrition: { calories: 266, protein: 11.0, carbs: 33.0, fat: 10.0, sugar: 3.5, fiber: 2.0 }, commonUnits: [{ unit: '1 slice', grams: 100 }] },
+  { name: 'Burger (chicken)',      category: 'snack',    servingSize: 100, servingUnit: 'g', nutrition: { calories: 245, protein: 12.0, carbs: 30.0, fat: 9.0,  sugar: 5.0, fiber: 1.5 }, commonUnits: [{ unit: '1 burger', grams: 150 }] },
+  { name: 'Sandwich (veg)',        category: 'snack',    servingSize: 100, servingUnit: 'g', nutrition: { calories: 185, protein: 5.5,  carbs: 28.0, fat: 6.0,  sugar: 3.0, fiber: 2.0 }, commonUnits: [{ unit: '1 sandwich', grams: 150 }] },
+  { name: 'Coke / Pepsi',         category: 'beverage', servingSize: 100, servingUnit: 'ml', nutrition: { calories: 41,  protein: 0,    carbs: 10.6, fat: 0,    sugar: 10.6, fiber: 0 },  commonUnits: [{ unit: '1 can (330ml)', grams: 330 }, { unit: '1 glass', grams: 250 }] },
+
+  // ── DAIRY EXTRAS ─────────────────────────────────────────────────────────
+  { name: 'Greek Yogurt',         category: 'dairy',     servingSize: 100, servingUnit: 'g', nutrition: { calories: 59,  protein: 10.0, carbs: 3.6,  fat: 0.4,  sugar: 3.2, fiber: 0 },   commonUnits: [{ unit: '1 cup', grams: 200 }] },
+  { name: 'Ice Cream (vanilla)',   category: 'snack',    servingSize: 100, servingUnit: 'g', nutrition: { calories: 207, protein: 3.5,  carbs: 24.0, fat: 11.0, sugar: 21.0, fiber: 0.6 }, commonUnits: [{ unit: '1 scoop', grams: 65 }, { unit: '1 cup', grams: 130 }] },
+
+  // ── SNACKS ───────────────────────────────────────────────────────────────
+  { name: 'Biscuits (Marie)',      category: 'snack',    servingSize: 100, servingUnit: 'g', nutrition: { calories: 410, protein: 7.0,  carbs: 75.0, fat: 9.5,  sugar: 18.0, fiber: 1.5 }, commonUnits: [{ unit: '1 biscuit', grams: 6 }, { unit: '4 biscuits', grams: 25 }] },
+  { name: 'Dark Chocolate',        category: 'snack',    servingSize: 100, servingUnit: 'g', nutrition: { calories: 546, protein: 4.9,  carbs: 59.4, fat: 31.3, sugar: 47.9, fiber: 7.0 }, commonUnits: [{ unit: '1 square', grams: 10 }, { unit: '1 bar', grams: 40 }] },
+  { name: 'Sprouts (mixed, cooked)', category: 'protein', servingSize: 100, servingUnit: 'g', nutrition: { calories: 62, protein: 4.3,  carbs: 11.5, fat: 0.4,  sugar: 2.0, fiber: 1.8 },  commonUnits: [{ unit: '1 katori', grams: 100 }] },
+  { name: 'Namkeen / Mixture',     category: 'snack',    servingSize: 100, servingUnit: 'g', nutrition: { calories: 450, protein: 9.0,  carbs: 55.0, fat: 22.0, sugar: 3.0, fiber: 3.0 }, commonUnits: [{ unit: '1 handful', grams: 30 }] },
+  { name: 'Upma with Vegetables',  category: 'grain',    servingSize: 100, servingUnit: 'g', nutrition: { calories: 112, protein: 2.8,  carbs: 18.0, fat: 3.5,  sugar: 1.0, fiber: 1.5 }, commonUnits: [{ unit: '1 katori', grams: 150 }] },
+];
+
+// Upserts newFoods — called on server startup, safe to run repeatedly
+async function upsertNewFoods() {
+  try {
+    if (!newFoods.length) return;
+    const ops = newFoods.map(f => ({
+      updateOne: {
+        filter: { name: f.name, source: 'system' },
+        update: { $set: { ...f, source: 'system', userId: null } },
+        upsert: true,
+      },
+    }));
+    const result = await Food.bulkWrite(ops, { ordered: false });
+    if (result.upsertedCount > 0) {
+      console.log(`Food library: added ${result.upsertedCount} new items`);
+    }
+  } catch (err) {
+    console.error('upsertNewFoods error:', err.message);
+  }
+}
+
+module.exports = { upsertNewFoods };
+
 async function seed() {
   try {
     await mongoose.connect(process.env.MONGO_URI);

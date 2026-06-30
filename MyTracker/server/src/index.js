@@ -3,6 +3,7 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const connectDB = require('./db');
 const { globalLimiter } = require('./middleware/rateLimiter');
+const { upsertNewFoods } = require('./seeds/foods.seed');
 
 const authRoutes        = require('./routes/auth');
 const profileRoutes     = require('./routes/profile');
@@ -16,7 +17,7 @@ const reviewRoutes      = require('./routes/review');
 
 const app = express();
 
-connectDB();
+connectDB().then(() => upsertNewFoods());
 
 // Simple CORS — set headers on every request, handle preflight inline
 app.use((req, res, next) => {
