@@ -200,4 +200,7 @@ async function seed() {
   }
 }
 
-seed();
+// Only auto-run when executed directly (node foods.seed.js), not when imported
+if (require.main === module) {
+  seed();
+}
