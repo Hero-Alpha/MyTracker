@@ -34,50 +34,30 @@ function extractJSON(raw) {
 }
 
 async function parseSupplementLabel(imageBuffer, mimeType = 'image/jpeg') {
-  // Gemini doesn't support heic/heif — normalise to jpeg for safety
   const safeMime = ['image/jpeg', 'image/png', 'image/webp', 'image/gif'].includes(mimeType)
-    ? mimeType
-    : 'image/jpeg';
+    ? mimeType : 'image/jpeg';
 
-  const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
-
-  const result = await model.generateContent([
-    { inlineData: { data: imageBuffer.toString('base64'), mimeType: safeMime } },
-    PARSE_PROMPT,
-  ]);
-
-  const raw = result.response.text().trim();
-  return extractJSON(raw);
+  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  const result = await model.generateContent(
+    [{ inlineData: { data: imageBuffer.toString('base64'), mimeType: safeMime } }, PARSE_PROMPT],
+    { timeout: 20000 },
+  );
+  return extractJSON(result.response.text().trim());
 }
 
-const REVIEW_PROMPT = (payload) => `You are a fitness and nutrition coach AI. Analyze this user's weekly health data and give a structured review.
+const REVIEW_PROMPT = (payload) => `Fitness coach AI. Analyze this weekly data and return ONLY valid JSON, no markdown.
 
-User Data (JSON):
-${JSON.stringify(payload, null, 2)}
+${JSON.stringify(payload)}
 
-Return ONLY a valid JSON object — no markdown, no explanation, no code blocks — with this exact structure:
-{
-  "summary": "2-3 sentence overview of their week",
-  "strengths": ["strength 1", "strength 2", "strength 3"],
-  "issues": ["issue 1", "issue 2"],
-  "recommendations": ["actionable tip 1", "actionable tip 2", "actionable tip 3", "actionable tip 4"],
-  "grocerySuggestions": ["food item 1", "food item 2", "food item 3", "food item 4", "food item 5"]
-}
+JSON structure (exactly):
+{"summary":"2-3 sentence overview","strengths":["s1","s2"],"issues":["i1"],"recommendations":["r1","r2","r3"],"grocerySuggestions":["f1","f2","f3","f4"]}
 
-Rules:
-- Be specific, reference their actual numbers (calories, protein, etc.)
-- strengths: 2-4 items, what they did well
-- issues: 1-3 items, what needs improvement
-- recommendations: 3-5 actionable, concrete steps for next week
-- grocerySuggestions: 4-6 specific foods/ingredients that would help them hit their goals, consider Indian food context
-- Keep each item to 1 sentence max`;
+Rules: be specific with numbers, Indian food context for grocery list, 1 sentence per item.`;
 
 async function generateWeeklyReview(payload) {
-  const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
-
-  const result = await model.generateContent(REVIEW_PROMPT(payload));
-  const raw     = result.response.text().trim();
-  return extractJSON(raw);
+  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  const result = await model.generateContent(REVIEW_PROMPT(payload), { timeout: 20000 });
+  return extractJSON(result.response.text().trim());
 }
 
 module.exports = { parseSupplementLabel, generateWeeklyReview };

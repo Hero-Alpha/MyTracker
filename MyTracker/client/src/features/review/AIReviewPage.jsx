@@ -78,12 +78,17 @@ export default function AIReviewPage() {
   async function generate() {
     setGenerating(true);
     setError('');
+    const controller = new AbortController();
+    // Kill after 35s client-side — Gemini should respond in <20s
+    const killTimer = setTimeout(() => controller.abort(), 35000);
     try {
-      const res = await api.post('/review/generate');
+      const res = await api.post('/review/generate', {}, { signal: controller.signal });
       setReview(res.data.review);
       setCooldown(null);
     } catch (err) {
-      if (err.response?.status === 429) {
+      if (err.name === 'CanceledError' || err.code === 'ERR_CANCELED') {
+        setError('Gemini is slow right now. Try again in a minute.');
+      } else if (err.response?.status === 429) {
         setCooldown({
           nextAvailableAt: err.response.data.nextAvailableAt,
           hoursRemaining:  err.response.data.hoursRemaining,
@@ -92,6 +97,7 @@ export default function AIReviewPage() {
         setError(err.response?.data?.message || 'Failed to generate review. Try again.');
       }
     } finally {
+      clearTimeout(killTimer);
       setGenerating(false);
     }
   }
